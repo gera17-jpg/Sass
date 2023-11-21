@@ -3,32 +3,41 @@
     <head>
         <title>Sass</title>
         <link rel = 'stylesheet' href = 'sass.css'>     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     </head>
     <body>
-        <h1>The things that I learned about Sass</h1>
-        <div>    
-            <p>1. <b>Creating a variable & Nesting</b></p> <!--You can also just create a variable in css-->
-            <ul>
-                <li>list1</li> 
-                <li>list2</li> 
-                <li>list3</li> 
-                <li>list4</li> 
-                <li>list5</li> 
-            </ul>
-        </div>    
-        <ol>
-            <li>list1</li> 
-            <li>list2</li> 
-            <li>list3</li> 
-            <li>list4</li> 
-            <li>list5</li> 
-        </ol>
-        <p>2. Inheritance</p>
-        <div>
-            <button class='g'></button>
-            <button class='r'></button>
-            <button class='s'></button>
+        <nav>
+            <p>MAMAMOO</p>
+            <div>
+                <input type = 'text' value = 'Search'>
+                <input type = 'submit'>
+                <a href = '#'>Members</a>
+            </div>
+        </nav>
+        
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src = 'img/m1.jpg'></div>
+                <div class="swiper-slide"><img src = 'img/m2.jpg'></div>
+                <div class="swiper-slide"><img src = 'img/m3.jpg'></div>
+                <div class="swiper-slide"><img src = 'img/m4.jpg'></div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src = 'sass.js'></script>
     </body>
 </html>
