@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang = 'eng'>
+<html lang = "eng">
     <head>
         <title>Sass</title>
-        <link rel = 'stylesheet' href = 'sass.css'>     
+        <link rel = "stylesheet" href = "sass.scss">     
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     </head>
@@ -10,23 +10,30 @@
         <nav>
             <p>MAMAMOO</p>
             <div>
-                <input type = 'text' value = 'Search'>
-                <input type = 'submit'>
-                <a href = '#'>Members</a>
+                <input type = "text" value = "Search">
+                <input type = "submit">
+                <a href = "#">Members</a>
             </div>
         </nav>
         
         <!-- Slider main container -->
         <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="swiper-slide"><img src = 'img/m1.jpg'></div>
-                <div class="swiper-slide"><img src = 'img/m2.jpg'></div>
-                <div class="swiper-slide"><img src = 'img/m3.jpg'></div>
-                <div class="swiper-slide"><img src = 'img/m4.jpg'></div>
-            
+                <div class="swiper-slide">
+                    <img class="slide-img" src="img/m1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-img" src="img/m2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-img" src="img/m3.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-img" src="img/m4.jpg">
+                </div>
             </div>
+        </div>
+
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
